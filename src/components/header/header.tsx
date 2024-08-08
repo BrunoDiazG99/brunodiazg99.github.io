@@ -6,6 +6,9 @@ export default function Header() {
     <header className="header">
       <div className="header-container">
         <div className="navbar-wrapper">
+          <nav className="nav-title">
+            <Link href="/">{`Haruchon's portfolio`}</Link>
+          </nav>
           <nav className="navbar">
             <ul className="nav-menu">
               <li className="nav-list">
