@@ -1,0 +1,34 @@
+{
+  "section": [
+    {
+      "id": "001",
+      "title": "Games",
+      "projects": [
+        {
+          "id": "101",
+          "name": "Seinn",
+          "description": "My first game ever",
+          "background": "seinn-card.jpg"
+        }
+      ]
+    },
+    {
+      "id": "002",
+      "title": "Web Dev",
+      "projects": [
+        {
+          "id": "102",
+          "name": "C+",
+          "description": "A series of marketplace apps",
+          "background": ""
+        },
+        {
+          "id": "103",
+          "name": "RR",
+          "description": "Applications for real estate inspections management",
+          "background": ""
+        }
+      ]
+    }
+  ]
+}
