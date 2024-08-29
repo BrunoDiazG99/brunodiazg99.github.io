@@ -58,7 +58,7 @@ export default function SeinnDetails() {
           operations skills, the game’s mechanics will only show smaller numbers
           and a variety of operations. In contrast, if a child is learning
           fractions and needs to see and operate with them more often, the game
-          will mostly show fractions within it's mechanics.
+          will mostly show fractions within it’s mechanics.
         </p>
         <br />
         <p>
@@ -93,7 +93,7 @@ export default function SeinnDetails() {
           <li>Some (very rough) mockups</li>
         </ul>
         <p>
-          So check them out to your heart's content!
+          So check them out to your heart’s content!
           <br />
           Disclaimer: Everything is in Spanish! Sorry about that but let me know
           if you are interested in an English version!!
