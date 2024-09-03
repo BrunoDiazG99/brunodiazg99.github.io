@@ -15,7 +15,7 @@ export default function Header() {
                 <Link href="/">Home</Link>
               </li>
               <li className="nav-list">
-                <Link href="/projects">Projects</Link>
+                <Link href="/#Games">Projects</Link>
               </li>
               <li className="nav-list">
                 <Link href="/about">About</Link>

@@ -8,7 +8,8 @@
           "id": "101",
           "name": "Seinn",
           "description": "My first game ever",
-          "background": "seinn-card.jpg"
+          "background": "seinn-card.jpg",
+          "url": "seinn"
         }
       ]
     },
@@ -18,15 +19,10 @@
       "projects": [
         {
           "id": "102",
-          "name": "C+",
+          "name": "Workplace Projects",
           "description": "A series of marketplace apps",
-          "background": ""
-        },
-        {
-          "id": "103",
-          "name": "RR",
-          "description": "Applications for real estate inspections management",
-          "background": ""
+          "background": "workplace-card.png",
+          "url": "workplace"
         }
       ]
     }

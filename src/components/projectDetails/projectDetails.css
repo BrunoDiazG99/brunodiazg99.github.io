@@ -59,14 +59,13 @@
 }
 
 .proj-desc > ul {
+  font-size: 20px;
   margin: 16px 0px;
   padding: 0px 0px 0px 40px;
 }
 
 .proj-pic {
   position: relative;
-  /* width: 195px;
-  height: 245px; */
 }
 
 .pics-row {

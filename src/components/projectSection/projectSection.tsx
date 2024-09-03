@@ -8,6 +8,7 @@ type Project = {
   name: string;
   description: string;
   background: string;
+  url: string;
 };
 
 type PSProps = {
@@ -24,7 +25,7 @@ export default function ProjectSection({ title, projects }: PSProps) {
 
       <div className="items">
         {projects.map((proj) => (
-          <Link href="/projects/seinn" key={proj.id}>
+          <Link href={`/projects/${proj.url}`} key={proj.id}>
             <div className="project-card">
               <div className="card">
                 <Image
