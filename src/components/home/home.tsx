@@ -1,17 +1,18 @@
 "use client";
 import { useEffect } from "react";
-import "./home.css";
 import Image from "next/image";
-import justPic from "../../../public/haruchon.png";
-import ProjectSection from "../projectSection/projectSection";
+import "./home.css";
+import home from "../../../public/home.jpg";
 import data from "../../data/data.json";
+import ProjectSection from "../projectSection/projectSection";
+import TechSection from "../techSection/techSection";
 
 export default function Home() {
   return (
     <div className="home-container">
       <div className="home-intro">
         <div className="home-desc">
-          <h1>Hello there new buddy</h1>
+          <h1>Hello there!</h1>
           <p>
             I’m Bruno Diaz, aka Haruchon.
             <br />
@@ -21,9 +22,10 @@ export default function Home() {
           </p>
         </div>
         <div className="home-pic">
-          <Image src={justPic} alt="just a pic" width={195} height={245} />
+          <Image src={home} alt="just a pic" width={195} height={245} />
         </div>
       </div>
+      <TechSection />
       {data.section.map((section) => (
         <ProjectSection
           key={section.id}
