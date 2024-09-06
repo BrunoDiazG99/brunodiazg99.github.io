@@ -65,7 +65,7 @@ const techStack: Technology[] = [
 export default function TechSection({}) {
   return (
     <div className="tech-carousel-container">
-      <h2>Technologies I've Worked With</h2>
+      <h2>Technologies I’ve Worked With</h2>
       <Carousel
         showThumbs={false}
         infiniteLoop
