@@ -8,19 +8,34 @@
   gap: 40px;
 }
 
+@media (min-width: 768px) {
+  .home-container {
+    width: calc(100vw - 150px);
+    padding: 75px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home-container {
+    width: 1050px;
+  }
+}
+
 .home-intro {
   display: flex;
   flex-direction: row;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .home-desc {
-  width: 800px;
+  max-width: 550px;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   text-align: justify;
+  gap: 20px;
 
   color: #ffffff;
 }
@@ -34,9 +49,8 @@
 .home-desc > h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
-  line-height: 77px;
-  text-align: justify;
+  line-height: 90%;
+  text-align: center;
   letter-spacing: -0.02em;
 
   color: #000000;

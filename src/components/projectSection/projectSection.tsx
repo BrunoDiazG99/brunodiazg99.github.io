@@ -20,7 +20,7 @@ export default function ProjectSection({ title, projects }: PSProps) {
   return (
     <div className="project-section">
       <div className="title">
-        <h1>{title}</h1>
+        <h2>{title}</h2>
       </div>
 
       <div className="items">

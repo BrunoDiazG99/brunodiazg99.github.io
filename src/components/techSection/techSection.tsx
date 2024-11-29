@@ -6,91 +6,102 @@ import Image from "next/image";
 
 interface Technology {
   name: string;
-  description: string;
-  logo: string;
+  tech: {
+    name: string;
+    logo: string;
+  }[];
 }
 
-const techStack: Technology[] = [
-  {
-    name: "React",
-    description: "A JavaScript library for building user interfaces.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-  },
-  {
-    name: "HTML5",
-    description: "The standard markup language for creating web pages.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-  },
-  {
-    name: "CSS",
-    description:
-      "A style sheet language used for describing the look and formatting of a document.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-  },
-  {
-    name: "Figma",
-    description: "A powerful online UI design and prototyping tool.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
-  },
-  {
-    name: "Unity",
-    description:
-      "A game engine used to develop 2D and 3D games and simulations.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg",
-  },
-  {
-    name: "Godot",
-    description: "An open-source game engine for developing 2D and 3D games.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg",
-  },
-  {
-    name: "TypeScript",
-    description:
-      "A strongly typed programming language that builds on JavaScript.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
-  },
-  {
-    name: "Redux",
-    description: "A predictable state container for JavaScript apps.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png",
-  },
-  {
-    name: "Sass",
-    description:
-      "A CSS extension language used to write efficient and maintainable stylesheets.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
-  },
-];
+interface Category {
+  category: Technology[];
+}
+
+const techStack: Category = {
+  category: [
+    {
+      name: "Web Development",
+      tech: [
+        {
+          name: "React",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+        },
+        {
+          name: "Redux",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png",
+        },
+        {
+          name: "JavaScript",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/600px-JavaScript-logo.png",
+        },
+        {
+          name: "TypeScript",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
+        },
+        {
+          name: "HTML5",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
+        },
+        {
+          name: "CSS",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
+        },
+        {
+          name: "Sass",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg",
+        },
+      ],
+    },
+    {
+      name: "Web Development",
+      tech: [
+        {
+          name: "Figma",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+        },
+      ],
+    },
+    {
+      name: "Game Development",
+      tech: [
+        {
+          name: "Unity",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/1/19/Unity_Technologies_logo.svg",
+        },
+        {
+          name: "Godot",
+          logo: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Godot_icon.svg",
+        },
+        {
+          name: "Tiled",
+          logo: "https://static.macupdate.com/products/62323/l/tiled-logo.png?v=1663570260",
+        },
+      ],
+    },
+  ],
+};
 
 export default function TechSection({}) {
   return (
-    <div className="tech-carousel-container">
-      <h2>Technologies I’ve Worked With</h2>
-      <Carousel
-        showThumbs={false}
-        infiniteLoop
-        autoPlay
-        emulateTouch
-        showArrows={false}
-        showStatus={false}
-        showIndicators={false}
-      >
-        {techStack.map((tech) => (
-          <div key={tech.name} className="tech-item">
-            <div className="tech-logo">
-              <Image
-                src={tech.logo}
-                alt={tech.name}
-                width={80}
-                height={80}
-                className="tech-logo"
-              />
-            </div>
-            <h3>{tech.name}</h3>
-            <p>{tech.description}</p>
+    <div className="tech-container">
+      <h2>{"Techs 'n Tools"}</h2>
+      {techStack.category.map((category, index) => (
+        <div className="tech-category" key={index}>
+          <h3>{category.name}</h3>
+          <div className="tech-grid">
+            {category.tech.map((tech, index) => (
+              <div className="tech-logo" key={index}>
+                <Image
+                  src={tech.logo}
+                  alt={tech.name}
+                  width={80}
+                  height={80}
+                  className="tech-logo"
+                />
+              </div>
+            ))}
           </div>
-        ))}
-      </Carousel>
+        </div>
+      ))}
     </div>
   );
 }
