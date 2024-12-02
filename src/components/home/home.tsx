@@ -25,7 +25,9 @@ export default function Home() {
           <Image src={home} alt="just a pic" width={195} height={245} />
         </div>
       </div>
+      <div className="divider"></div>
       <TechSection />
+      <div className="divider"></div>
       {data.section.map((section) => (
         <ProjectSection
           key={section.id}

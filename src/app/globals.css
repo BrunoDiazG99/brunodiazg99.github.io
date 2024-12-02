@@ -41,19 +41,27 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-p {
-  font-size: 1rem !important;
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem) !important;
+a {
+  font-size: 0.75rem;
+  font-size: clamp(0.75rem, 0.6rem + 0.75vw, 1.5rem);
+}
+
+p,
+li {
+  font-size: 1rem;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
+  color: #000000;
 }
 
 h1 {
   font-style: normal;
   font-weight: 700;
-  line-height: 90%;
+  line-height: 100%;
   text-align: center;
   letter-spacing: -0.02em;
-  font-size: 3rem !important;
-  font-size: clamp(3rem, 2.8rem + 1vw, 4rem) !important;
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.6rem + 2vw, 4rem);
+  color: #000000;
 }
 
 h2 {
@@ -61,8 +69,9 @@ h2 {
   font-weight: 700;
   line-height: 110%;
   letter-spacing: -0.02em;
-  font-size: 1.5rem !important;
-  font-size: clamp(1.5rem, 1.4rem + 0.5vw, 2rem) !important;
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+  color: #ffffff;
 }
 
 h3 {
@@ -70,8 +79,22 @@ h3 {
   font-weight: 700;
   line-height: 110%;
   letter-spacing: -0.02em;
-  font-size: 1.25rem !important;
-  font-size: clamp(1.25rem, 1.15rem + 0.5vw, 1.75rem) !important;
+  font-size: 1.05rem;
+  font-size: clamp(1.05rem, 1.01rem + 0.19999999999999996vw, 1.25rem);
+  color: #000000;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 35px 35px 0px 35px;
+}
+
+.divider {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
 }
 
 @layer utilities {

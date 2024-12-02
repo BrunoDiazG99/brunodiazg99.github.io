@@ -7,20 +7,12 @@
       rgba(var(--header-start-rgba))
     )
     rgba(var(--header-end-rgba));
-  width: 100%;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px 0;
+  padding: 15px 0;
   position: sticky;
   top: 0;
 }
+
 .header-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1240px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
@@ -34,17 +26,22 @@
 }
 
 .navbar {
-  flex-direction: row;
   padding-left: 0;
   display: block;
 }
 
+.navbar > ul > li {
+  color: #fff;
+}
+
 .nav-title {
+  width: min-content;
   grid-column-gap: 20px;
   color: #fff;
   flex-direction: row;
   display: flex;
 }
+
 .nav-menu {
   grid-column-gap: 20px;
   color: #fff;

@@ -10,9 +10,7 @@ export default function WorkplaceDetails() {
     <div className="proj-container">
       <div className="proj-desc">
         <h1>Crecemas+</h1>
-        <h2>
-          My first job <br /> A series of marketplace applications
-        </h2>
+        <h2>My first job</h2>
       </div>
 
       <div className="proj-desc">
@@ -63,18 +61,15 @@ export default function WorkplaceDetails() {
 
       <div className="proj-desc">
         <h1>Reliable Reports</h1>
-        <h2>
-          Thanks to ExSquared, <br /> I was able to collaborate with Reliable
-          Reports <br />
-          on some applications for real estate inspections management
-        </h2>
+        <h2>Thanks to ExSquared</h2>
       </div>
 
       <div className="proj-desc">
         <p>
           I got to work for Reliable Reports via staffing thanks to ExSquared
           (technically hired by them). Within this timeframe, I got to work on 3
-          projects, all of them using React and basic CSS, which are:
+          projects for real estate inspections management, all of them using
+          React and basic CSS, which are:
         </p>
         <ul className="list-disc">
           <li>

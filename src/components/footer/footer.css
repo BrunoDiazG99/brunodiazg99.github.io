@@ -1,9 +1,9 @@
 .footer {
   z-index: 101;
-  width: calc(100vw - 150px);
-  height: 150px;
-  margin: 50px auto 0;
+  width: -webkit-fill-available;
+  height: 125px;
   padding: 50px 0 0;
+  margin: 50px auto 0;
   border-top: 1px solid #e6e6e6;
 }
 

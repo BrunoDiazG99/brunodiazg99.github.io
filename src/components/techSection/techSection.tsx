@@ -52,7 +52,7 @@ const techStack: Category = {
       ],
     },
     {
-      name: "Web Development",
+      name: "Design",
       tech: [
         {
           name: "Figma",
@@ -93,8 +93,8 @@ export default function TechSection({}) {
                 <Image
                   src={tech.logo}
                   alt={tech.name}
-                  width={80}
-                  height={80}
+                  width={60}
+                  height={60}
                   className="tech-logo"
                 />
               </div>
