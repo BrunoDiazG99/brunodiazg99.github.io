@@ -27,7 +27,7 @@ export default function Home() {
       </div>
       <div className="divider"></div>
       <TechSection />
-      <div className="divider"></div>
+      <div className="divider" id="Projects"></div>
       {data.section.map((section) => (
         <ProjectSection
           key={section.id}
