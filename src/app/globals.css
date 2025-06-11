@@ -41,7 +41,8 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-a {
+nav > a,
+nav > ul > li > a {
   font-size: 0.75rem;
   font-size: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
 }

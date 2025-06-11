@@ -23,6 +23,13 @@
           "description": "A series of marketplace apps",
           "background": "workplace-card.png",
           "url": "workplace"
+        },
+        {
+          "id": "103",
+          "name": "Animusic",
+          "description": "Anime music search",
+          "background": "animusic-card.png",
+          "url": "animusic"
         }
       ]
     }
