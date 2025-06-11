@@ -55,9 +55,8 @@ export default function WorkplaceDetails() {
           If you want to see the fleshed out project, check out their website ➡{" "}
           <a href="https://www.crecemas.com/">Here!</a>
         </p>
-        <p>(It’s in Spanish by the way can’t really do much about it :p)</p>
+        {/* <p>(It’s in Spanish by the way can’t really do much about it :p)</p> */}
       </div>
-      <br />
 
       <div className="proj-desc">
         <h1>Reliable Reports</h1>
@@ -66,10 +65,10 @@ export default function WorkplaceDetails() {
 
       <div className="proj-desc">
         <p>
-          I got to work for Reliable Reports via staffing thanks to ExSquared
-          (technically hired by them). Within this timeframe, I got to work on 3
-          projects for real estate inspections management, all of them using
-          React and basic CSS, which are:
+          I got to work for Reliable Reports via staffing thanks to ExSquared.
+          Within this timeframe, I got to work on 3 projects for real estate
+          inspections management, all of them using React and basic CSS, which
+          are:
         </p>
         <ul className="list-disc">
           <li>
@@ -93,7 +92,7 @@ export default function WorkplaceDetails() {
           <li>CSS</li>
           <li>Git Hub</li>
         </ul>
-        <p>Sadly, I can’t provide better images on the projects made</p>
+        {/* <p>Sadly, I can’t provide better images on the projects made</p> */}
       </div>
     </div>
   );

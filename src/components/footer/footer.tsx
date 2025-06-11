@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footbar-wrapper">
           <nav className="footbar-title">
-            <Link href="/">{`by Haruchon`}</Link>
+            <Link href="/">{`by Bruno Diaz`}</Link>
           </nav>
 
           {/* TODO: Maybe add socials? */}

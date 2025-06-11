@@ -28,7 +28,13 @@
 .home-pic {
   position: relative;
   width: 195px;
-  /* height: 245px; */
+  border-radius: 5rem;
+}
+
+.home-pic > img {
+  width: 100%;
+  height: auto;
+  border-radius: 5rem;
 }
 
 .home-desc > h1 {
@@ -37,4 +43,14 @@
 
 .home-desc > p {
   color: #ffffff;
+}
+
+@media (width <= 768px) {
+  .home-intro {
+    gap: 25px;
+  }
+
+  .home-container {
+    gap: 50px;
+  }
 }

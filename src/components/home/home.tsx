@@ -14,7 +14,7 @@ export default function Home() {
         <div className="home-desc">
           <h1>Hello there!</h1>
           <p>
-            I’m Bruno Diaz, aka Haruchon.
+            I’m Bruno Diaz.
             <br />
             Welcome to my portfolio! Here you can find out the various projects
             I’ve worked so far in my career. <br />

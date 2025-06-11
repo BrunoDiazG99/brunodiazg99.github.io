@@ -81,7 +81,7 @@ export default function SeinnDetails() {
         </ul>
         <p>
           If you are interested in checking the project you can visit the
-          repository ➡ <a href="https://github.com/Haruchon/Seinn">Here!</a>
+          repository ➡ <a href="https://github.com/BrunoDiazG99/Seinn">Here!</a>
         </p>
         <br />
         <p>The repository also contains various documents, including:</p>

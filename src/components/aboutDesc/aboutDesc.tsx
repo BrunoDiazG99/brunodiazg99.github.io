@@ -15,7 +15,7 @@ export default function AboutDesc() {
           my BSc says) based in Peru with experience in Web Development, looking
           to start my journey into the Game Development scene.
         </p>
-        <p>I go by Haruchon online, hence the name of this website.</p>
+        {/* <p>I go by Haruchon online, hence the name of this website.</p> */}
         <p>
           This is just a page to show my current and past projects, my
           experiences and some extra info here and there.

@@ -7,7 +7,7 @@ export default function Header() {
       <div className="header-container">
         <div className="navbar-wrapper">
           <nav className="nav-title">
-            <Link href="/">{`Haruchon's portfolio`}</Link>
+            <Link href="/">{`Bruno Diaz's portfolio`}</Link>
           </nav>
           <nav className="navbar">
             <ul className="nav-menu">
